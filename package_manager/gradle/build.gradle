@@ -1,0 +1,38 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.github.mineworks.spec.fixtures.gradle'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.8.2'
+    compile group: 'commons-logging', name: 'commons-logging', version: '1.1.1'
+    compile "commons-io:commons-io:2.1"
+    compile "commons-io:commons-io:2.4"
+    compile "commons-collections:commons-collections:3.2.1"
+}
+
+subprojects {
+    apply plugin: "java"
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+project(":commons") {
+    dependencies {
+        compile "commons-collections:commons-collections:3.2.1"
+        testCompile "junit:junit:4.12"
+    }
+}
+
+project(":commons-newer") {
+    dependencies {
+        compile "commons-collections:commons-collections:3.2.1"
+    }
+}
