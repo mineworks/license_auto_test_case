@@ -1,0 +1,3 @@
+[submodule "deps/ohnogit"]
+	path = deps/ohnogit
+	url = https://github.com/github/ohnogit.git
