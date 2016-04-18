@@ -1,3 +1,8 @@
+# NOTICE
+[This directory](https://github.com/mineworks/license_auto_test_case/tree/master/github-maven-example) is a full copy from https://github.com/kevinsawicki/github-maven-example, all rights is belong to https://github.com/kevinsawicki. Copy request issued at [here](https://github.com/kevinsawicki/github-maven-example/issues/5)
+
+----
+
 This is an example project that uses the [GitHub Maven Plugins](https://github.com/github/maven-plugins).
 
 See the [POM file](https://github.com/kevinsawicki/github-maven-example/blob/master/example/pom.xml)
